@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="sales_team_test_view_tree" model="ir.ui.view">
+            <field name="name">sales.team.test.tree</field>
+            <field name="model">sales.team.test</field>
+            <field name="arch" type="xml">
+                <tree string="Canales de Ventas">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="sales_team_test_view_form" model="ir.ui.view">
+            <field name="name">sales.team.test.form</field>
+            <field name="model">sales.team.test</field>
+            <field name="arch" type="xml">
+                <form string="Canal de Ventas">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_sales_team_test" model="ir.actions.act_window">
+            <field name="name">Canales de Ventas</field>
+            <field name="res_model">sales.team.test</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_sales_team_test" name="Canales de Ventas" action="action_sales_team_test" parent="account.account_account_menu" sequence="5"/>
+
+    </data>
+</odoo>

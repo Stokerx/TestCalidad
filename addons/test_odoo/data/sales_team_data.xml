@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="sales_team_test_1" model="sales.team.test">
+            <field name="name">Equipo de Ventas</field>
+        </record>
+        <record id="sales_team_test_2" model="sales.team.test">
+            <field name="name">Sitio web</field>
+        </record>
+    </data>
+</odoo>

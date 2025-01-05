@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="account_invoice_template_inherit_test_odoo" inherit_id="account.report_invoice_document">
+            <xpath expr="//div[@name='customer']" position="after">
+                <div t-if="o.qr_invoice">
+                    <img t-att-src="'data:image/png;base64,%s' % to_text(o.qr_invoice)" style="width:150px;height:150px;"/>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>

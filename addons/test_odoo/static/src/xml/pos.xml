@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-inherit="point_of_sale.PaymentScreen" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[hasclass('right-content')]//div[hasclass('button-list')]" position="inside">
+            <div class="button" t-on-click="clickBoleta">
+                <i class="fa fa-file-text-o"/> Boleta
+            </div>
+        </xpath>
+    </t>
+</templates>
